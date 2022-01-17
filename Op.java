@@ -2,7 +2,7 @@ import javax.xml.crypto.dsig.keyinfo.RetrievalMethod;
 
 public class Op {
 
-	// user
+	//  user
 	public void userLandBuy(User user, LandDTO land) {
 		user.money -= land.getPrice();
 	}
@@ -45,48 +45,48 @@ public class Op {
 		pc.money += land.getInterceptPrice3();
 	}
 
-	// »çÈ¸º¹Áö±â±İ
+	// ì‚¬íšŒë³µì§€ê¸°ê¸ˆ
 	public void sw(User user, int sw) {
 		if (sw % 2 == 0) {
-			System.out.println("\t\t" + "¿¬¸»Á¤»ê °á°ú ºÎÁ·ÇÑ ¼¼±İÀ» ³³ºÎÇÏ¿´½À´Ï´Ù");
+			System.out.println("\t\t" + "ì—°ë§ì •ì‚° ê²°ê³¼ ë¶€ì¡±í•œ ì„¸ê¸ˆì„ ë‚©ë¶€í•˜ì˜€ìŠµë‹ˆë‹¤");
 			user.money -= 100;
 		} else {
-			System.out.println("\t\t" + "¿¬¸»Á¤»ê °á°ú ¼¼±İÀ» È¯±Ş¹Ş¾Ò½À´Ï´Ù");
+			System.out.println("\t\t" + "ì—°ë§ì •ì‚° ê²°ê³¼ ì„¸ê¸ˆì„ í™˜ê¸‰ë°›ì•˜ìŠµë‹ˆë‹¤");
 			user.money += 100;
 		}
 	}
 
-	// º¸³Ê½º
+	// ë³´ë„ˆìŠ¤
 	public void bonus(User user, int bonus) {
 		if (bonus == 1) {
 			// 150
-			System.out.println("\t\t" + "º¸À¯ ÄÚÀÎ ÅõÀÚ ¼º°ø");
-			System.out.println("\t\t" + "Àç»ê + 150¾ï");
+			System.out.println("\t\t" + "ë³´ìœ  ì½”ì¸ íˆ¬ì ì„±ê³µ");
+			System.out.println("\t\t" + "ì¬ì‚° + 150ì–µ");
 			user.money += 150;
 		} else if (bonus == 2) {
-			// Æä³ÎÆ¼ -400
-			System.out.println("\t\t" + "¸¶ÇÇ¾ÆPbk¸¦ ¸¸³ª »æ¶â°å½À´Ï´Ù");
-			System.out.println("\t\t" + "Àç»ê -400¾ï");
+			// í˜ë„í‹° -400
+			System.out.println("\t\t" + "ë§ˆí”¼ì•„Pbkë¥¼ ë§Œë‚˜ ì‚¥ëœ¯ê²¼ìŠµë‹ˆë‹¤");
+			System.out.println("\t\t" + "ì¬ì‚° -400ì–µ");
 			user.money -= 400;
 		} else if (bonus == 3) {
 			// 250
-			System.out.println("\t\t" + "ÀÓ´ë·á¸¦ ¹Ş¾Ò½À´Ï´Ù");
-			System.out.println("\t\t" + "Àç»ê +250¾ï");
+			System.out.println("\t\t" + "ì„ëŒ€ë£Œë¥¼ ë°›ì•˜ìŠµë‹ˆë‹¤");
+			System.out.println("\t\t" + "ì¬ì‚° +250ì–µ");
 			user.money += 250;
 		} else if (bonus == 4) {
 			// 350
-			System.out.println("\t\t" + "¹Ì´ÏÇÁ·ÎÁ§Æ®°¡ ´ë±â¾÷¿¡ ÆÈ·È½À´Ï´Ù");
-			System.out.println("\t\t" + "Àç»ê +350¾ï");
+			System.out.println("\t\t" + "ë¯¸ë‹ˆí”„ë¡œì íŠ¸ê°€ ëŒ€ê¸°ì—…ì— íŒ”ë ¸ìŠµë‹ˆë‹¤");
+			System.out.println("\t\t" + "ì¬ì‚° +350ì–µ");
 			user.money += 350;
 		} else if (bonus == 5) {
-			// Æä³ÎÆ¼ -200
-			System.out.println("\t\t" + "¸Ó½ºÅ©°¡ ¸Á¾ğÀ» Çß½À´Ï´Ù");
-			System.out.println("\t\t" + "Àç»ê -200¾ï");
+			// í˜ë„í‹° -200
+			System.out.println("\t\t" + "ë¨¸ìŠ¤í¬ê°€ ë§ì–¸ì„ í–ˆìŠµë‹ˆë‹¤");
+			System.out.println("\t\t" + "ì¬ì‚° -200ì–µ");
 			user.money -= 200;
 		} else {
 			// 450
-			System.out.println("\t\t" + "±æÀ» °¡´Ù ¹Î¼­ÇüÀ» ¸¸³µ½À´Ï´Ù");
-			System.out.println("\t\t" + "³²ÀÚ°¡!! 450¾ïµµ ¾ø³ª!!");
+			System.out.println("\t\t" + "ê¸¸ì„ ê°€ë‹¤ ë¯¼ì„œí˜•ì„ ë§Œë‚¬ìŠµë‹ˆë‹¤");
+			System.out.println("\t\t" + "ë‚¨ìê°€!! 450ì–µë„ ì—†ë‚˜!!");
 			user.money += 450;
 		}
 	}
@@ -134,42 +134,42 @@ public class Op {
 		user.money += land.getInterceptPrice3();
 	}
 
-	// »çÈ¸º¹Áö±â±İ ( ¿À¹ö ·Îµù )
+	// ì‚¬íšŒë³µì§€ê¸°ê¸ˆ ( ì˜¤ë²„ ë¡œë”© )
 	public void sw(Pc pc, int sw) {
 		if (sw % 2 == 0) {
-			System.out.println("\t\t" + "»çÈ¸º¹Áö±â±İÀ» ³³ºÎÇÏ¿´½À´Ï´Ù");
+			System.out.println("\t\t" + "ì‚¬íšŒë³µì§€ê¸°ê¸ˆì„ ë‚©ë¶€í•˜ì˜€ìŠµë‹ˆë‹¤");
 			pc.money -= 100;
 		} else {
-			System.out.println("\t\t" + "ÀºÇàÀ¸·ÎºÎÅÍ »çÈ¸º¹Áö±â±İÀ» ¹Ş¾Ò½À´Ï´Ù");
+			System.out.println("\t\t" + "ì€í–‰ìœ¼ë¡œë¶€í„° ì‚¬íšŒë³µì§€ê¸°ê¸ˆì„ ë°›ì•˜ìŠµë‹ˆë‹¤");
 			pc.money += 100;
 		}
 	}
 
-	// º¸³Ê½º ( ¿À¹ö ·Îµù )
+	// ë³´ë„ˆìŠ¤ ( ì˜¤ë²„ ë¡œë”© )
 	public void bonus(Pc pc, int bonus) {
 		if (bonus == 1) {
 			// 150
-			System.out.println("\t\t" + "PBKÀç»ê + 150¾ï");
+			System.out.println("\t\t" + "PBKì¬ì‚° + 150ì–µ");
 			pc.money += 150;
 		} else if (bonus == 2) {
-			// Æä³ÎÆ¼ -400
-			System.out.println("\t\t" + "PBKÀç»ê -400¾ï");
+			// í˜ë„í‹° -400
+			System.out.println("\t\t" + "PBKì¬ì‚° -400ì–µ");
 			pc.money -= 400;
 		} else if (bonus == 3) {
 			// 250
-			System.out.println("\t\t" + "PBKÀç»ê +250¾ï");
+			System.out.println("\t\t" + "PBKì¬ì‚° +250ì–µ");
 			pc.money += 250;
 		} else if (bonus == 4) {
 			// 350
-			System.out.println("\t\t" + "PBKÀç»ê +350¾ï");
+			System.out.println("\t\t" + "PBKì¬ì‚° +350ì–µ");
 			pc.money += 350;
 		} else if (bonus == 5) {
-			// Æä³ÎÆ¼ -200
-			System.out.println("\t\t" + "PBKÀç»ê -200¾ï");
+			// í˜ë„í‹° -200
+			System.out.println("\t\t" + "PBKì¬ì‚° -200ì–µ");
 			pc.money -= 200;
 		} else {
 			// 450
-			System.out.println("\t\t" + "PBKÀç»ê +450¾ï");
+			System.out.println("\t\t" + "PBKì¬ì‚° +450ì–µ");
 			pc.money += 450;
 		}
 	}
